@@ -132,7 +132,7 @@ License: [MIT](https://github.com/jpuri/react-draft-wysiwyg/blob/master/LICENSE)
 
 ## Wie nutze ich die Komponente in meinem Projekt?
 
-Ordner: `RichTextEditor` in das einene Projekt übernehmen.
+Dateien `react-draft-wysiwyg.css` und `RichTextEditor.tsx` in eimem gemeinsammen Ordner in das Projekt übernehmen.
 
 Import hinzufügen:
 
