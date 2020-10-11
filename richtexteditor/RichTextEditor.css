@@ -839,6 +839,8 @@
 }
 
 .rdw-editor-main {
+  padding-bottom: 20px;
+  /* min-height: 40px; */
   height: 100%;
   overflow: auto;
   box-sizing: border-box;
