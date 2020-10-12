@@ -137,11 +137,6 @@ export default function RichTextEditor(props: RichTextEditorProps): JSX.Element 
     }
     // eslint-disable-next-line 
   }, [editorState]);
-
-
-  React.useEffect(() => {
-
-  })
   //#endregion
 
   return (
