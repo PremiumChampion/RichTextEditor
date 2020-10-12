@@ -14,6 +14,7 @@ ReactDOM.render(
         { text: 'User', value: 'User', url: '' },
       ],
     }}
+    style={{fontFamily: "sans-serif"}}
     customDecorators={[ImageDecorator]}
     onChangeHTML={console.log}
   />,
