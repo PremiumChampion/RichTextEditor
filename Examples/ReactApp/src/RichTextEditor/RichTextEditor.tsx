@@ -1,10 +1,9 @@
-import { ContentState, convertFromHTML, convertFromRaw, convertToRaw, EditorState, RawDraftContentState } from 'draft-js';
+import { ContentState, convertFromHTML, convertToRaw, EditorState, RawDraftContentState } from 'draft-js';
 import draftToHtml from 'draftjs-to-html';
 import React from 'react';
 import { Editor } from 'react-draft-wysiwyg';
 import { CustomDecorator } from './CustomDecorator';
 import { DefaultToolbar } from './DefaultToolbar';
-import { ImageDecorator } from './ImageDecorator';
 import { Mention } from './Mention';
 import './RichTextEditor.css';
 import { RichTextEditorLocales } from './RichTextEditorLocales';
@@ -45,22 +44,6 @@ export interface RichTextEditorProps {
    * @memberof RichTextEditorProps
    */
   onChangeRaw?: (RawContents: RawDraftContentState) => void;
-  /**
-   * Used to set the content of the component and override the initial statemanagement 
-   * Can be used in combination with onChangeHtml
-   *
-   * @type {string}
-   * @memberof RichTextEditorProps
-   */
-  html?: string;
-  /**
-   * Used to set the content of the component and override the initial statemanagement 
-   * Can be used in combination with onChangeRaw
-   *
-   * @type {RawDraftContentState}
-   * @memberof RichTextEditorProps
-   */
-  raw?: RawDraftContentState;
   /**
    * the toolbar-options for the editor
    *
@@ -107,22 +90,6 @@ export interface RichTextEditorProps {
  */
 export default function RichTextEditor(props: RichTextEditorProps): JSX.Element {
 
-  const TriggerSettingRawEditorState = () => {
-    if (props.raw) {
-      const contentState = convertFromRaw(props.raw);
-
-      const newEditorState = EditorState.createWithContent(contentState);
-
-      setEditorState(newEditorState);
-    }
-  }
-
-  const TriggerSettingHtmlEditorState = () => {
-    if (props.html) {
-      ConvertHTMLAndSetEditorState(props.html)
-    }
-  }
-
   const ConvertHTMLAndSetEditorState = (HTML: string) => {
     const contentBlock = convertFromHTML(HTML);
 
@@ -151,10 +118,6 @@ export default function RichTextEditor(props: RichTextEditorProps): JSX.Element 
     if (props.initialHtml) {
       ConvertHTMLAndSetEditorState(props.initialHtml)
     }
-
-    if (props.raw) {
-      TriggerSettingRawEditorState()
-    }
     // eslint-disable-next-line 
   }, []);
   //#endregion
@@ -180,16 +143,6 @@ export default function RichTextEditor(props: RichTextEditorProps): JSX.Element 
 
   })
   //#endregion
-
-  //#region Handle property changes
-  // Handle changes in the html property
-  React.useEffect(TriggerSettingHtmlEditorState, [props.html]);
-
-  // Handle changes in the raw  property
-  React.useEffect(TriggerSettingRawEditorState, [props.raw]);
-  //#endregion
-
-
 
   return (
     <div style={props.style} onClick={focusEditor}>

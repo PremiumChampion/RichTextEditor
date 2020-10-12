@@ -108,7 +108,7 @@ export const DefaultToolbar = {
       popupClassName: undefined,
       urlEnabled: true,
       uploadEnabled: true,
-      alignmentEnabled: false,
+      alignmentEnabled: true,
       uploadCallback: async (file) => { return { data: { link: await convertFileToBase64String(file) } } },
       previewImage: true,
       inputAccept: 'image/gif,image/jpeg,image/jpg,image/png,image/svg',

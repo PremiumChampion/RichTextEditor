@@ -162,20 +162,6 @@ ReactDOM.render(
 - Required: no
 - Default value: undefined
 
-### html
-
-- Description: Used to set the content of the component and override the initial statemanagement (Can be used in combination with `onChangeHtml`)
-- Type: string
-- Required: no
-- Default value: undefined
-
-### raw
-
-- Description: Used to set the content of the component and override the initial statemanagement (Can be used in combination with `onChangeRaw`)
-- Type: RawDraftContentState
-- Required: no
-- Default value: undefined
-
 ### toolbarOptions
 
 - Description: the toolbar-options for the editor
