@@ -1,0 +1,53 @@
+{
+    "@types/draft-js@0.10.44": {
+      "licenses": "MIT",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "path": "\\node_modules\\@types\\draft-js",
+      "licenseFile": "\\node_modules\\@types\\draft-js\\LICENSE"
+    },
+    "@types/draftjs-to-html@0.8.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "path": "\\node_modules\\@types\\draftjs-to-html",
+      "licenseFile": "\\node_modules\\@types\\draftjs-to-html\\LICENSE"
+    },
+    "@types/html-to-draftjs@1.4.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "path": "\\node_modules\\@types\\html-to-draftjs",
+      "licenseFile": "\\node_modules\\@types\\html-to-draftjs\\LICENSE"
+    },
+    "@types/react-draft-wysiwyg@1.13.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+      "path": "\\node_modules\\@types\\react-draft-wysiwyg",
+      "licenseFile": "\\node_modules\\@types\\react-draft-wysiwyg\\LICENSE"
+    },
+    "draft-js@0.11.7": {
+      "licenses": "MIT",
+      "repository": "https://github.com/facebook/draft-js",
+      "path": "\\node_modules\\draft-js",
+      "licenseFile": "\\node_modules\\draft-js\\LICENSE"
+    },
+    "draftjs-to-html@0.9.1": {
+      "licenses": "MIT",
+      "repository": "https://github.com/jpuri/draftjs-to-html",
+      "publisher": "Jyoti Puri",
+      "path": "\\node_modules\\draftjs-to-html",
+      "licenseFile": "\\node_modules\\draftjs-to-html\\LICENSE"
+    },
+    "html-to-draftjs@1.5.0": {
+      "licenses": "MIT",
+      "repository": "https://github.com/jpuri/html-to-draftjs",
+      "publisher": "Jyoti Puri",
+      "path": "\\node_modules\\html-to-draftjs",
+      "licenseFile": "\\node_modules\\html-to-draftjs\\LICENSE"
+    },
+    "react-draft-wysiwyg@1.14.5": {
+      "licenses": "MIT",
+      "repository": "https://github.com/jpuri/react-draft-wysiwyg",
+      "publisher": "Jyoti Puri",
+      "path": "\\node_modules\\react-draft-wysiwyg",
+      "licenseFile": "\\node_modules\\react-draft-wysiwyg\\LICENSE"
+    }
+  }
